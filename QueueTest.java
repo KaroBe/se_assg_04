@@ -3,6 +3,10 @@
 // Karoline Brehm - 117190
 // Elisabeth Scholz - 117xxx
 
+// compile and run by:
+// javac QueueTest.java 
+// java -Xmx128M -Xms16M QueueTest
+
 //Dienst, bzw. adaptierte Klasse
 import java.util.ArrayList;
 
