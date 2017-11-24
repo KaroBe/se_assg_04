@@ -7,4 +7,9 @@ public class Bracets extends Expression
 	{
 		return this.binEx.computeExpression();
 	}
+	
+	public Expression getExpression()
+	{
+		return this.binEx;
+	}
 }

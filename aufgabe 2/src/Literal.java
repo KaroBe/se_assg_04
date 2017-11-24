@@ -1,10 +1,15 @@
 
-public class Literal 
+public class Literal extends Expression
 {
-	int a;
+	private int a;
 	
 	public int computeExpression()
 	{
 		return a;
+	}
+	
+	public int getExpression()
+	{
+		return this.a;
 	}
 }

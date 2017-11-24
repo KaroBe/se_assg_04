@@ -13,4 +13,14 @@ public abstract class BinaryExpression  extends Expression
 	}
 	
 	public abstract int computeExpression();
+	
+	public Expression getExpressionA()
+	{
+		return this.a;
+	}
+	
+	public Expression getExpressionB()
+	{
+		return this.b;
+	}
 }
