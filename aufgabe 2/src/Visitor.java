@@ -1,5 +1,12 @@
 
 public abstract class Visitor 
 {
-	public abstract void visit(Expression exp);
+	protected Expression exp;
+	
+	public Visitor(Expression e)
+	{
+		this.exp = e;
+	}
+	
+	public abstract void visit();
 }
