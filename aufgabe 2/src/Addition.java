@@ -1,13 +1,13 @@
 
 public class Addition extends BinaryExpression
 {
-	public Addition(int x, int y)
+	public Addition(Expression x, Expression y)
 	{
 		super(x, y);
 	}
 	
 	public int computeExpression()
 	{
-		return (this.a + this.b);
+		return (this.a.computeExpression() + this.b.computeExpression());
 	}
 }

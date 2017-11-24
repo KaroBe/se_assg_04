@@ -1,13 +1,13 @@
 
 public class Multiplication extends BinaryExpression
 {	
-	public Multiplication(int x, int y)
+	public Multiplication(Expression x, Expression y)
 	{
 		super(x, y);
 	}
 	
 	public int computeExpression()
 	{
-		return (this.a * this.b);
+		return (this.a.computeExpression() * this.b.computeExpression());
 	}
 }

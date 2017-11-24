@@ -1,12 +1,12 @@
 
 public abstract class BinaryExpression  extends Expression
 {
-	protected int a;
-	protected int b;
+	protected Expression a;
+	protected Expression b;
 	
 	//public BinaryExpression () {}
 	
-	public BinaryExpression(int x, int y)
+	public BinaryExpression(Expression x, Expression y)
 	{
 		this.a = x;
 		this.b = y;

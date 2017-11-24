@@ -1,13 +1,13 @@
 
 public class Division extends BinaryExpression
 {
-	public Division(int x, int y)
+	public Division(Expression x, Expression y)
 	{
 		super(x, y);
 	}
 	
 	public int computeExpression()
 	{
-		return (this.a / this.b);
+		return (this.a.computeExpression() / this.b.computeExpression());
 	}
 }

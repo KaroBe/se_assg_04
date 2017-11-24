@@ -1,13 +1,13 @@
 
 public class Subtraction extends BinaryExpression
 {
-	public Subtraction(int x, int y)
+	public Subtraction(Expression x, Expression y)
 	{
 		super(x, y);
 	}
 	
 	public int computeExpression()
 	{
-		return (this.a - this.b);
+		return (this.a.computeExpression() - this.b.computeExpression());
 	}
 }
