@@ -1,7 +1,7 @@
 
 public class Bracets extends Expression
 {
-	private BinaryExpression binEx;
+	private Expression binEx;
 	
 	public int computeExpression()
 	{
